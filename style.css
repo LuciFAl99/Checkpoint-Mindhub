@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 6.5vh;
+    padding: 0.5rem;
+    
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+    
+}
+
+.travels{
+    background-color: red;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+header{
+    height: 40vh;
+    background-image: url(./images/image-2.jpg);
+    background-size: cover;
+    background-position-y:55%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.808)), url(./images/image-1.jpg);
+    
+}
+span{
+    color: red;
+}
+h3{
+    background-color: rgb(201, 194, 194);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h4{
+    text-align: center;
+}
+.info{
+display: flex;
+justify-content: space-around;
+margin-top: 1rem;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+}
+
+.osaka{
+    background-image: url(./images/image-5.jpg);
+    background-position-x: 50%;
+    background-position-y: 98%
+    
+}
+.kyoto{
+    background-image: url(./images/image-3.jpg);
+    background-position-x: 50%;
+    background-position-y: 80%;
+}
+.tokyo{
+    background-image: url(./images/image-4.jpg);
+    background-position-x: 50%;
+    background-position-y: 90%;
+}
+.info div{
+    width: 15rem;
+    height: 12rem;
+}
+.info h4{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style-position: inside;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: gray;
+     border-radius: 10px;
+    color: white;
+}
+table{
+    text-align: center;
+    color: black;
+    background-color: gray;
+    color: white;
+
+}
+caption{
+border: 1px solid black;
+color: white;
+background-color: black;
+}
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 0.5rem;
+}
+td{
+    width: 8rem;
+    height: 3rem;
+}
+.yes{
+    margin-left: 1rem;
+}
+
+fieldset{
+   padding: 0.5rem;
+}
+footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h4 a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (min-width:425px) and (max-width:631px){
+    form{
+        display: none;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px){
+    .tokyo, .kyoto{
+        margin-top: 1rem;
+    }
+    ul{
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+    table{
+        width: 10rem;
+    }
+    .more-info{
+        flex-direction: column;
+        align-items: center;
+    }
+.navegacion{
+    height: 10vh;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    table{
+        margin-top: 1rem;
+    }
+    .navegacion{
+        height: 10vh;
+    }
+}
